@@ -1,0 +1,20 @@
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
+Traceback (most recent call last):
+  File "submit.py", line 346, in <module>
+    main()
+  File "submit.py", line 190, in main
+    bx.build(df_train, df_test)
+  File "submit.py", line 157, in build
+    self._predict()
+  File "submit.py", line 137, in _predict
+    test_xgb = xgb.DMatrix(X_test)
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/xgboost-0.4-py2.7.egg/xgboost/core.py", line 232, in __init__
+    self._init_from_npy2d(data, missing)
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/xgboost-0.4-py2.7.egg/xgboost/core.py", line 284, in _init_from_npy2d
+    ctypes.byref(self.handle)))
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/xgboost-0.4-py2.7.egg/xgboost/core.py", line 97, in _check_call
+    raise XGBoostError(_LIB.XGBGetLastError())
+xgboost.core.XGBoostError: There are NAN in the matrix, however, you did not set missing=NAN
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
