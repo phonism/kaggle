@@ -1,0 +1,20 @@
+{'subsample': 0.7, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 12, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.615452625685
+
+{'subsample': 0.7, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 11, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.616813868389
+
+{'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 11, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.61796129734
+
+{'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 9, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.622044512191 train2
+
+{'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 11, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.626064983971 train2
+
+{'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 3, 'nthread': 10}
+cv: 0.623222830285 train2
+
+{'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10}
+cv: 0.623840419428 train2

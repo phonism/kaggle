@@ -33,7 +33,7 @@ for i in range(1, 2):
     train[:, i] = lbl.transform(train[:, i])
     test[:, i] = lbl.transform(test[:, i])
 
-train = np.column_stack((train_ids, labels, train))
+train = np.column_stack((train_ids, train, labels))
 test = np.column_stack((test_ids, test))
 train = pd.DataFrame(train, columns=train_cols)
 test = pd.DataFrame(test, columns=test_cols)
