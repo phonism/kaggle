@@ -69,24 +69,44 @@ def submit(train_file_path, test_file_path):
     train_features = train[features]
     test_features = test[features]
     y_train = train['Response'].values
-    num_round = 500
+    num_round = 1000
     dtrain = xgb.DMatrix(train_features, label=y_train, missing=np.NaN)
     dtest = xgb.DMatrix(test_features, missing=np.NaN)
     all_test = np.zeros((test.shape[0], ))
     nt = 50
 
     for i in range(nt):
-        seed = i + 123
-        param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10, 'seed': seed}
+        seed = np.random.randint(1, 1000000) + 123
+        param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 11, 'min_child_weight': 3, 'nthread': 10, 'seed': seed}
         watchlist = [(dtrain,'train')]
         bst = xgb.train(param, dtrain, num_round, watchlist)
         pred_test = bst.predict(dtest)
         # y_train_test = [output_function(y) for y in y_test_bst]
         print 'number round: ' + str(i)
         all_test += pred_test
+
+    for i in range(nt):
+        seed = np.random.randint(1, 1000000) + 123
+        param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10, 'seed': seed}
+        watchlist = [(dtrain,'train')]
+        bst = xgb.train(param, dtrain, num_round, watchlist)
+        pred_test = bst.predict(dtest)
+        # y_train_test = [output_function(y) for y in y_test_bst]
+        print 'number round: ' + str(i + nt)
+        all_test += pred_test
+
+    for i in range(nt):
+        seed = np.random.randint(1, 1000000) + 123
+        param = {'subsample': 0.7, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 12, 'min_child_weight': 3, 'nthread': 10, 'seed': seed}
+        watchlist = [(dtrain,'train')]
+        bst = xgb.train(param, dtrain, num_round, watchlist)
+        pred_test = bst.predict(dtest)
+        # y_train_test = [output_function(y) for y in y_test_bst]
+        print 'number round: ' + str(i + nt * 2)
+        all_test += pred_test
     
-    all_test = all_test / nt
-    y_train_test = [output_function2(y) for y in all_test]
+    all_test = all_test / (nt * 3.0)
+    y_train_test = [output_function(y) for y in all_test]
     ids = test.Id.values.tolist()
     n_ids = len(ids)
 
