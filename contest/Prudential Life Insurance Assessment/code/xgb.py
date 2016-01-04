@@ -21,7 +21,6 @@ def get_params():
     params["colsample_bytree"] = 0.30
     params["silent"] = 1
     params["max_depth"] = 9
-    params["nthread"] = 10
     plst = list(params.items())
 
     return plst
@@ -34,7 +33,7 @@ def apply_offset(data, bin_offset, sv, scorer=eval_wrapper):
 
 # global variables
 columns_to_drop = ['Id', 'Response']
-xgb_num_rounds = 1000
+xgb_num_rounds = 300
 num_classes = 8
 
 print("Load the data using pandas")
