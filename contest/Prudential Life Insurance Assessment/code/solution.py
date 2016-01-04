@@ -148,8 +148,8 @@ def test():
     print cv
 
 def main():
-    sb()
-    # cv()
+    # sb()
+    cv()
     # test()
 
 if __name__ == '__main__':
