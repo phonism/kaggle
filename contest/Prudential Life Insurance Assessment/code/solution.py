@@ -3,9 +3,11 @@ import numpy as np
 import random
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.cross_validation import train_test_split
+from sklearn.metrics import log_loss
 import xgboost as xgb
 from kappa_score import *
 import csv
+import datetime
 
 def output_function(x):
     if x < 1:
@@ -48,34 +50,38 @@ def cross_validation(train_file_path, test_file_path, param, num_round=1000):
     return quadratic_weighted_kappa(y_test, y_train_test)
 
 
-def submit(train_file_path, test_file_path, param):
+def submit(train_file_path, test_file_path):
     train = pd.read_csv(train_file_path)
     test = pd.read_csv(test_file_path)
     sample_submission = pd.read_csv('../data/sample_submission.csv')
-
     features = train.columns.tolist()
     features.remove('Id')
     features.remove('Response')
     train_features = train[features]
     test_features = test[features]
     y_train = train['Response'].values
-    
-    # X_train, X_test, y_train, y_test = train_test_split(train_features, y_train, test_size=0.33, random_state=42)
-
-    num_round = 1000
-
+    num_round = 500
     dtrain = xgb.DMatrix(train_features, label=y_train, missing=np.NaN)
     dtest = xgb.DMatrix(test_features, missing=np.NaN)
+    all_test = np.zeros((test.shape[0], ))
+    nt = 50
 
-    watchlist = [(dtrain,'train')]
-    bst = xgb.train(param, dtrain, num_round, watchlist)
-    y_test_bst = bst.predict(dtest)
-    y_train_test = [output_function(y) for y in y_test_bst]
-
+    for i in range(nt):
+        seed = i + 123
+        param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10, 'seed': seed}
+        watchlist = [(dtrain,'train')]
+        bst = xgb.train(param, dtrain, num_round, watchlist)
+        pred_test = bst.predict(dtest)
+        # y_train_test = [output_function(y) for y in y_test_bst]
+        print 'number round: ' + str(i)
+        all_test += pred_test
+    
+    all_test = all_test / nt
+    y_train_test = [output_function(y) for y in all_test]
     ids = test.Id.values.tolist()
     n_ids = len(ids)
 
-    prediction_file = open("xgbresult1.csv", "w")
+    prediction_file = open("xgbresult1234.csv", "w")
     prediction_file_object = csv.writer(prediction_file)
     prediction_file_object.writerow(["Id","Response"])
     for i in range(0, n_ids):
@@ -137,8 +143,8 @@ def cv():
 
 def sb():
     # param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'count:poisson', 'max_depth': 11, 'min_child_weight': 3, 'nthread': 10}
-    param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10}
-    submit('../data/train2.csv', '../data/test2.csv', param)
+    # param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 'objective': 'reg:linear', 'max_depth': 12, 'min_child_weight': 2, 'nthread': 10, 'seed'V}
+    submit('../data/train2.csv', '../data/test2.csv')
 
 def test():
     param = {'subsample': 0.8, 'eta': 0.02, 'colsample_bytree': 0.65, 'eval_metric': 'rmse', 
@@ -148,8 +154,8 @@ def test():
     print cv
 
 def main():
-    # sb()
-    cv()
+    sb()
+    # cv()
     # test()
 
 if __name__ == '__main__':
