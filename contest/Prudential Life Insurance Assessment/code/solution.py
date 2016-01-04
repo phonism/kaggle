@@ -20,6 +20,15 @@ def output_function(x):
             return 2
         return x
 
+def output_function2(x):
+    if x < 1:
+        return 1
+    elif x > 8:
+        return 8
+    else:
+        x = int(round(x))
+        return x
+
 def cross_validation(train_file_path, test_file_path, param, num_round=1000):
     train = pd.read_csv(train_file_path)
     test = pd.read_csv(test_file_path)
@@ -77,7 +86,7 @@ def submit(train_file_path, test_file_path):
         all_test += pred_test
     
     all_test = all_test / nt
-    y_train_test = [output_function(y) for y in all_test]
+    y_train_test = [output_function2(y) for y in all_test]
     ids = test.Id.values.tolist()
     n_ids = len(ids)
 
