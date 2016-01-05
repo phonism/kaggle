@@ -23,7 +23,11 @@ train['Product_Info_2'] = pd.factorize(train['Product_Info_2'])[0]
 train.fillna(-1, inplace=True)
 train['Response'] = train['Response'].astype(int)
 train['Split'] = np.random.randint(5, size=train.shape[0])
+# print train.columns.values
+# train.drop(['Medical_History_10'], axis=1)
+# train.drop(['Medical_History_24'], axis=1)
 
+'''
 X = []
 Y = []
 for i in range(len(train)):
@@ -35,6 +39,7 @@ for i in range(len(train)):
     Y.append(train.iloc[i]['Response'])
 
 train['X'] = X
+'''
 
 
 

@@ -38,10 +38,8 @@ class TrainModel(object):
         num_rounds = self.num_rounds
         num_classes = 8
         all_test_preds = ''
-        seed = np.random.randint(1, 100000) + 778877
         dtrain = xgb.DMatrix(train.drop(['Id', 'Response'], axis=1), train['Response'].values)
         dtest = xgb.DMatrix(test.drop(['Id', 'Response'], axis=1), label=self.test['Response'].values)
-        param['seed'] = seed
         model = xgb.train(param, dtrain, num_rounds)
         train_preds = model.predict(dtrain, ntree_limit=model.best_iteration)
         print('Train score is:', self._eval_wrapper(train_preds, train['Response'])) 
@@ -52,7 +50,7 @@ class TrainModel(object):
         offset_train_preds = np.vstack((train_preds, train_preds, train['Response'].values))
         for j in range(num_classes):
             train_offset = lambda x: -self._apply_offset(offset_train_preds, x, j)
-            offsets[j] = fmin_powell(train_offset, offsets[j], retall=False)  
+            offsets[j] = fmin_powell(train_offset, offsets[j])  
         
         data = np.vstack((test_preds, test_preds, test['Response'].values))
         for j in range(num_classes):
@@ -83,7 +81,7 @@ class TrainModel(object):
             offset_train_preds = np.vstack((train_preds, train_preds, train['Response'].values))
             for j in range(num_classes):
                 train_offset = lambda x: -self._apply_offset(offset_train_preds, x, j)
-                offsets[j] = fmin_powell(train_offset, offsets[j], retall=False)  
+                offsets[j] = fmin_powell(train_offset, offsets[j])
             
             data = np.vstack((test_preds, test_preds, test['Response'].values))
             for j in range(num_classes):

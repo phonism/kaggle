@@ -16,12 +16,15 @@ class CrossValidation(object):
 
     def cv(self):
         train_set = self.train_set
-        kf = KFold(train_set.shape[0], n_folds=self.nfold)
+        kf = KFold(train_set.shape[0], n_folds=self.nfold, shuffle=True)
         scores = .0
+        idx = 1
         for train_loc, test_loc in kf:
             train = train_set.iloc[train_loc]
             test = train_set.iloc[test_loc]
             train_model = TrainModel(train, test, self.param, self.num_rounds)
             preds = train_model._predict()
             scores += train_model._eval_wrapper(preds, test['Response'])
+            print 'The ' + str(idx) + 'th CV scores is: ' + str(train_model._eval_wrapper(preds, test['Response']))
+            idx += 1
         return scores / self.nfold
