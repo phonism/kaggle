@@ -1,0 +1,54 @@
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/cross_validation.py:42: DeprecationWarning: This module has been deprecated in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.607416369985
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.606667150038
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.60795758607
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.608503497639
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.607901316092
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.2, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.605066490075
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.608892557473
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.5, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.608149933096
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 70, 'max_depth': 9}
+0.607220692273
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 90, 'max_depth': 9}
+0.607321254972
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 60, 'max_depth': 9}
+0.606556403889
+{'subsample': 0.7, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.605691669947
+{'subsample': 0.6, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.606080455913
+{'subsample': 0.5, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.605718475617
+{'subsample': 0.9, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.607116327677
+{'subsample': 1.0, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.607533444045
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.607416369985
+{'subsample': 0.8, 'eta': 0.2, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.601120336592
+{'subsample': 0.8, 'eta': 0.15, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.605099802797
+{'subsample': 0.8, 'eta': 0.05, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
+0.601977015376
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 10}
+0.606502931505
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 8}
+0.606535682585
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 11}
+0.605786236609
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 7}
+0.606039535765
+{'subsample': 0.8, 'eta': 0.1, 'colsample_bytree': 0.3, 'silent': 1, 'objective': 'reg:linear', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 15}
+0.604575291757
