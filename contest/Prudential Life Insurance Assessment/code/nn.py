@@ -134,7 +134,7 @@ def make_dataset(useDummies = True, fillNANStrategy = "mean", useNormalization =
 print ("Creating dataset...") 
 train, test, labels = make_dataset(useDummies = True, fillNANStrategy = "mean", useNormalization = True)
     
-clf = NN(inputShape = train.shape[1], layers = [128, 64], dropout = [0.5, 0.5], loss='mae', optimizer = 'adadelta', init = 'glorot_normal', nb_epochs = 1)
+clf = NN(inputShape = train.shape[1], layers = [128, 64], dropout = [0.4, 0.5], loss='mae', optimizer = 'adadelta', init = 'glorot_normal', nb_epochs = 20)
 
 print ("Training model...")
 clf.fit(train, labels)
