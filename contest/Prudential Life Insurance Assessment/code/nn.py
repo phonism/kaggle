@@ -5,6 +5,19 @@ from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation
 from keras.optimizers import Adadelta
 from keras.layers.normalization import BatchNormalization
+from scipy.optimize import fmin_powell
+from ml_metrics import quadratic_weighted_kappa
+
+def output_function(x):
+    if x < 1:
+        return 1
+    elif x > 8:
+        return 8
+    else:
+        x = int(round(x))
+        if x == 3:
+            return 2
+        return x
 
 class NN:
     #I made a small wrapper for the Keras model to make it more scikit-learn like
@@ -121,16 +134,19 @@ def make_dataset(useDummies = True, fillNANStrategy = "mean", useNormalization =
 print ("Creating dataset...") 
 train, test, labels = make_dataset(useDummies = True, fillNANStrategy = "mean", useNormalization = True)
     
-clf = NN(inputShape = train.shape[1], layers = [128, 64], dropout = [0.5, 0.5], loss='mae', optimizer = 'adadelta', init = 'glorot_normal', nb_epochs = 100)
+clf = NN(inputShape = train.shape[1], layers = [128, 64], dropout = [0.5, 0.5], loss='mae', optimizer = 'adadelta', init = 'glorot_normal', nb_epochs = 1)
 
 print ("Training model...")
 clf.fit(train, labels)
 
 print ("Making predictions...")
-pred = clf.predict(test)
-predClipped = np.clip(np.round(pred), 1, 8).astype(int) #Make the submissions within the accepted range
+test_pred = clf.predict(test)
+
+test_preds = np.clip(np.round(test_pred), 1, 8).astype(int) #Make the submissions within the accepted range
+
+final_test_preds = [output_function(y) for y in test_preds]
 
 submission = pd.read_csv('../data/sample_submission.csv')
-submission["Response"] = predClipped
+submission["Response"] = final_test_preds
 submission.to_csv('NNSubmission.csv', index=False)
 
