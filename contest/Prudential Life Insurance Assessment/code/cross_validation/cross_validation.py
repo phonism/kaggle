@@ -22,7 +22,6 @@ class CrossValidation(object):
             train = train_set.iloc[train_loc]
             test = train_set.iloc[test_loc]
             train_model = TrainModel(train, test, self.param, self.num_rounds)
-            train_model._train()
             preds = train_model._predict()
             scores += train_model._eval_wrapper(preds, test['Response'])
         return scores / self.nfold
