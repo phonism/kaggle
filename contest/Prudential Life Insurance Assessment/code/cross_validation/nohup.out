@@ -558,3 +558,349 @@ Optimization terminated successfully.
          Function evaluations: 38
 The 5th CV scores is: 0.66088880984
 0.660016795853
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
+Traceback (most recent call last):
+  File "submit.py", line 7, in <module>
+    test = pd.read_csv('../../data/test.csv')
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/pandas-0.17.1_22.g0c43fcc-py2.7-linux-x86_64.egg/pandas/io/parsers.py", line 498, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/pandas-0.17.1_22.g0c43fcc-py2.7-linux-x86_64.egg/pandas/io/parsers.py", line 285, in _read
+    return parser.read()
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/pandas-0.17.1_22.g0c43fcc-py2.7-linux-x86_64.egg/pandas/io/parsers.py", line 747, in read
+    ret = self._engine.read(nrows)
+  File "/home/users/luqi03/.jumbo/lib/python2.7/site-packages/pandas-0.17.1_22.g0c43fcc-py2.7-linux-x86_64.egg/pandas/io/parsers.py", line 1197, in read
+    data = self._reader.read(nrows)
+KeyboardInterrupt
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
+Optimization terminated successfully.
+         Current function value: -0.741800
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.746983
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.766748
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778111
+         Iterations: 2
+         Function evaluations: 86
+Optimization terminated successfully.
+         Current function value: -0.779606
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.779935
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.783123
+         Iterations: 2
+         Function evaluations: 56
+Optimization terminated successfully.
+         Current function value: -0.794590
+         Iterations: 2
+         Function evaluations: 38
+Train 1 has done!
+Optimization terminated successfully.
+         Current function value: -0.740032
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.745249
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.765256
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.776593
+         Iterations: 2
+         Function evaluations: 50
+Optimization terminated successfully.
+         Current function value: -0.778126
+         Iterations: 2
+         Function evaluations: 33
+Optimization terminated successfully.
+         Current function value: -0.778409
+         Iterations: 2
+         Function evaluations: 57
+Optimization terminated successfully.
+         Current function value: -0.782110
+         Iterations: 2
+         Function evaluations: 46
+Optimization terminated successfully.
+         Current function value: -0.793376
+         Iterations: 2
+         Function evaluations: 38
+Train 2 has done!
+Optimization terminated successfully.
+         Current function value: -0.739676
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.744773
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.764427
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.776074
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.777813
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.778123
+         Iterations: 2
+         Function evaluations: 75
+Optimization terminated successfully.
+         Current function value: -0.781242
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.792597
+         Iterations: 2
+         Function evaluations: 38
+Train 3 has done!
+Optimization terminated successfully.
+         Current function value: -0.740911
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.746153
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.765585
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.777205
+         Iterations: 2
+         Function evaluations: 44
+Optimization terminated successfully.
+         Current function value: -0.778889
+         Iterations: 2
+         Function evaluations: 48
+Optimization terminated successfully.
+         Current function value: -0.779041
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.782103
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.793350
+         Iterations: 2
+         Function evaluations: 38
+Train 4 has done!
+Optimization terminated successfully.
+         Current function value: -0.741688
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.747049
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.766861
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778184
+         Iterations: 2
+         Function evaluations: 57
+Optimization terminated successfully.
+         Current function value: -0.779684
+         Iterations: 3
+         Function evaluations: 58
+Optimization terminated successfully.
+         Current function value: -0.779696
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.782479
+         Iterations: 2
+         Function evaluations: 55
+Optimization terminated successfully.
+         Current function value: -0.793847
+         Iterations: 2
+         Function evaluations: 38
+Train 5 has done!
+Optimization terminated successfully.
+         Current function value: -0.742269
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.747611
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.767075
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778754
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.780314
+         Iterations: 2
+         Function evaluations: 47
+Optimization terminated successfully.
+         Current function value: -0.780306
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.783519
+         Iterations: 2
+         Function evaluations: 80
+Optimization terminated successfully.
+         Current function value: -0.795302
+         Iterations: 2
+         Function evaluations: 38
+Train 6 has done!
+Optimization terminated successfully.
+         Current function value: -0.742002
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.747085
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.766999
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778191
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.780163
+         Iterations: 2
+         Function evaluations: 56
+Optimization terminated successfully.
+         Current function value: -0.780359
+         Iterations: 2
+         Function evaluations: 83
+Optimization terminated successfully.
+         Current function value: -0.783255
+         Iterations: 2
+         Function evaluations: 79
+Optimization terminated successfully.
+         Current function value: -0.794332
+         Iterations: 2
+         Function evaluations: 38
+Train 7 has done!
+Optimization terminated successfully.
+         Current function value: -0.741127
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.746465
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.766366
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778318
+         Iterations: 2
+         Function evaluations: 72
+Optimization terminated successfully.
+         Current function value: -0.779593
+         Iterations: 2
+         Function evaluations: 37
+Optimization terminated successfully.
+         Current function value: -0.779764
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.782948
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.794575
+         Iterations: 2
+         Function evaluations: 38
+Train 8 has done!
+Optimization terminated successfully.
+         Current function value: -0.740651
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.745894
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.765835
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.777425
+         Iterations: 2
+         Function evaluations: 58
+Optimization terminated successfully.
+         Current function value: -0.778787
+         Iterations: 2
+         Function evaluations: 75
+Optimization terminated successfully.
+         Current function value: -0.779090
+         Iterations: 2
+         Function evaluations: 78
+Optimization terminated successfully.
+         Current function value: -0.782576
+         Iterations: 2
+         Function evaluations: 56
+Optimization terminated successfully.
+         Current function value: -0.794079
+         Iterations: 2
+         Function evaluations: 38
+Train 9 has done!
+Optimization terminated successfully.
+         Current function value: -0.742034
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.747220
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.767205
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.778703
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.780152
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.780219
+         Iterations: 2
+         Function evaluations: 93
+Optimization terminated successfully.
+         Current function value: -0.783069
+         Iterations: 2
+         Function evaluations: 94
+Optimization terminated successfully.
+         Current function value: -0.794759
+         Iterations: 2
+         Function evaluations: 38
+Train 10 has done!
