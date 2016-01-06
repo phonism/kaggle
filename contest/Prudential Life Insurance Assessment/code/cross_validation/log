@@ -1,4 +1,0 @@
-{'subsample': 0.9, 'eta': 0.02, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
-0.65931177782
-{'subsample': 0.9, 'eta': 0.02, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 10, 'min_child_weight': 80, 'max_depth': 9}
-0.659803953938

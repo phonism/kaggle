@@ -3,31 +3,13 @@ import pandas as pd
 from cross_validation import *
 
 
-def get_params():
-    params = {}
-    params["objective"] = "reg:linear"     
-    params["eta"] = 0.1
-    params["min_child_weight"] = 80
-    params["subsample"] = 0.8
-    params["colsample_bytree"] = 0.30
-    params["silent"] = 1
-    params["max_depth"] = 9
-    params["nthread"] = 10
-    return params
-
-param = get_params()
-num_rounds = 250
-
+# feature 1
 train = pd.read_csv('../../data/train.csv')
 train['Product_Info_2'] = pd.factorize(train['Product_Info_2'])[0]
 train.fillna(-1, inplace=True)
 train['Response'] = train['Response'].astype(int)
-train['Split'] = np.random.randint(5, size=train.shape[0])
-# print train.columns.values
-# train.drop(['Medical_History_10'], axis=1)
-# train.drop(['Medical_History_24'], axis=1)
+# train['Split'] = np.random.randint(5, size=train.shape[0])
 
-'''
 X = []
 Y = []
 for i in range(len(train)):
@@ -35,11 +17,10 @@ for i in range(len(train)):
     for j in train.iloc[i]:
         if j == 0:
             ans += 1
-    X.append(ans)
+    X.append(ans - 32)
     Y.append(train.iloc[i]['Response'])
 
 train['X'] = X
-'''
 
 
 
@@ -50,5 +31,19 @@ def print_cv(param, num_rounds, nfold=5):
     print cv.cv()
 
 # param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 10, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.02, 'objective': 'count:poisson', 'max_depth': 9}
+param = {'colsample_bytree': 0.4, 'silent': 0, 'eval_metric': 'rmse', 'nthread': 5, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.02, 'objective': 'count:poisson', 'max_depth': 9}
+print_cv(param, 1500, 5)
+
+
+
+'''
+# feature 2
+train = pd.read_csv('../../data/train.csv')
+train['Product_Info_2'] = pd.factorize(train['Product_Info_2'])[0]
+train.fillna(-1, inplace=True)
+train['Response'] = train['Response'].astype(int)
+# train['Split'] = np.random.randint(5, size=train.shape[0])
+
 param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 5, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.02, 'objective': 'count:poisson', 'max_depth': 9}
 print_cv(param, 1500, 5)
+'''
