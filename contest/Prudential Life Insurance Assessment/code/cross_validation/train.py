@@ -16,7 +16,7 @@ class TrainModel(object):
     def _eval_wrapper(self, yhat, y):  
         y = np.array(y)
         y = y.astype(int)
-        yhat = np.array(yhat)
+        yhat = np.array(yhat) 
         yhat = np.clip(np.round(yhat), np.min(y), np.max(y)).astype(int)   
         return quadratic_weighted_kappa(yhat, y)
     
