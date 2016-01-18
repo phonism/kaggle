@@ -1,0 +1,172 @@
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10
+[ 0.00069107  0.01507672  0.00368638  0.04586051  0.00031868  0.00201473
+  0.00086612  0.03038413  0.01507617  0.09385779  0.13000788  0.01739353
+  0.00869089  0.00448814  0.00711815  0.00188449  0.0119463   0.00237757
+  0.00418835  0.0064328   0.00164445  0.00712311  0.0098341   0.00501914
+  0.00208824  0.00759697  0.00199248  0.00308597  0.01329992  0.00280132
+  0.00310253  0.00247219  0.0023923   0.01550053  0.01320631  0.01922426
+  0.01434173  0.01540429  0.01186954  0.00210745  0.04449159  0.00429679
+  0.00770783  0.00236532  0.00234879  0.00215036  0.00073297  0.00134149
+  0.00211672  0.01020816  0.00131771  0.06343741  0.0045599   0.00208306
+  0.00390415  0.00159102  0.00423543  0.00185942  0.00126637  0.05099571
+  0.00386651  0.00185809  0.00155687  0.00222276  0.0063142   0.00213042
+  0.00734632  0.00146505  0.0012749   0.00592985  0.00183608  0.00058774
+  0.00220737  0.00142656  0.00090178  0.02511576  0.01288758  0.00222856
+  0.00171286  0.0004294   0.04942494  0.00087388  0.0005247   0.00107108
+  0.00079243  0.00041919  0.00097726  0.00122475  0.00131709  0.00070763
+  0.00054032  0.00056352  0.03260112  0.00108211  0.00057911  0.00071249
+  0.00060165  0.00040733  0.00072502  0.0012544   0.00657475  0.0011663
+  0.00239108  0.0005982   0.00080914  0.00077282  0.00081738  0.00120926
+  0.00109084  0.00076029  0.00093619  0.00092808  0.00047248  0.00083718
+  0.00246815  0.00345999  0.00054584  0.00254146  0.00080928  0.00337318
+  0.00095438  0.0005006   0.00098258  0.00067674  0.00138338  0.00809452
+  0.0056698 ]
+('Train score is:', 0.6223822630681513)
+Optimization terminated successfully.
+         Current function value: -0.622382
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.623525
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.656217
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.708073
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.726053
+         Iterations: 2
+         Function evaluations: 81
+Optimization terminated successfully.
+         Current function value: -0.726532
+         Iterations: 2
+         Function evaluations: 83
+Optimization terminated successfully.
+         Current function value: -0.744099
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.762840
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.624990230074
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10
+[ 0.00064685  0.01413313  0.0036641   0.04834642  0.00038925  0.0018196
+  0.00082871  0.031918    0.01565465  0.09373381  0.13026744  0.01698689
+  0.00878758  0.00459047  0.00700623  0.00182374  0.01172156  0.00236048
+  0.00316023  0.00664724  0.00169795  0.00576676  0.011293    0.00544723
+  0.00211317  0.00727828  0.00180929  0.00309833  0.01245783  0.00280717
+  0.00299989  0.00245973  0.00231786  0.01560871  0.01365388  0.01728622
+  0.01414472  0.01561885  0.01211615  0.00232105  0.04572486  0.00462671
+  0.00703567  0.00233647  0.00237443  0.00215655  0.00078101  0.00180169
+  0.00177288  0.01173403  0.00126175  0.05966692  0.00440989  0.00251006
+  0.0050773   0.00179424  0.00389011  0.00185901  0.0014642   0.05013434
+  0.00408674  0.00186286  0.00168146  0.00202229  0.00639426  0.00224141
+  0.00689522  0.00115186  0.00149362  0.00555129  0.00186089  0.00051345
+  0.00220517  0.00149893  0.00098167  0.02919255  0.01048818  0.00222906
+  0.00148534  0.00044337  0.05146941  0.00090008  0.00042699  0.00104528
+  0.00057863  0.00038601  0.00081736  0.00128922  0.00135824  0.00067107
+  0.00044576  0.00059846  0.03124685  0.00119447  0.00084071  0.0007549
+  0.0006472   0.00043304  0.00075692  0.00129917  0.00582566  0.00115488
+  0.00237766  0.00058077  0.00081182  0.00078193  0.00083938  0.00117093
+  0.0009004   0.00080997  0.00100411  0.00107934  0.00048084  0.00084815
+  0.00287727  0.0038525   0.00053989  0.00285309  0.00081745  0.0030914
+  0.00083002  0.00046151  0.0008394   0.00074573  0.00141383  0.00678409
+  0.00559406]
+('Train score is:', 0.62125398334206)
+Optimization terminated successfully.
+         Current function value: -0.621254
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.622458
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.656375
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.706468
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.723401
+         Iterations: 2
+         Function evaluations: 85
+Optimization terminated successfully.
+         Current function value: -0.723928
+         Iterations: 2
+         Function evaluations: 95
+Optimization terminated successfully.
+         Current function value: -0.742608
+         Iterations: 2
+         Function evaluations: 87
+Optimization terminated successfully.
+         Current function value: -0.760962
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.627247830996
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10
+[ 0.00068128  0.01498944  0.00356808  0.04871215  0.00030539  0.0018315
+  0.00079838  0.03099374  0.01418933  0.08968986  0.13282537  0.01646663
+  0.00882529  0.00458435  0.00683391  0.00194708  0.01211479  0.00246967
+  0.00389581  0.00646107  0.0016317   0.00748694  0.01014772  0.00653788
+  0.00198115  0.00894284  0.00195417  0.00310571  0.01301953  0.00275999
+  0.00288286  0.0024598   0.00242824  0.01535694  0.01350585  0.01765877
+  0.01470134  0.01504608  0.0119236   0.0020759   0.04248328  0.00502621
+  0.00705258  0.00245126  0.00222069  0.00224848  0.00062992  0.00119911
+  0.00187042  0.00869459  0.00106819  0.06502193  0.00488084  0.00280458
+  0.00420438  0.0018556   0.00384056  0.0016997   0.00132154  0.04890975
+  0.00377323  0.0018362   0.00157409  0.00309071  0.00603704  0.00213572
+  0.00680913  0.00156306  0.00185387  0.00622189  0.00175198  0.0004369
+  0.00226111  0.0014897   0.00092448  0.02750226  0.01111801  0.00205657
+  0.00194452  0.00045853  0.05061336  0.00077156  0.00037439  0.0008752
+  0.00064761  0.00034632  0.00112663  0.00125508  0.00130341  0.0007359
+  0.0005007   0.00063377  0.03317223  0.00099968  0.00068366  0.00069606
+  0.00064383  0.00034728  0.0007354   0.00130855  0.00650092  0.00099987
+  0.00240903  0.00054482  0.00069763  0.00069411  0.00073658  0.00132638
+  0.00080087  0.00066761  0.00089377  0.00108749  0.00052719  0.00065172
+  0.00245276  0.00379725  0.00058517  0.00226709  0.00081661  0.00269796
+  0.00128006  0.00046549  0.00103004  0.00069153  0.00153693  0.00838812
+  0.00556966]
+('Train score is:', 0.6261740704101871)
+Optimization terminated successfully.
+         Current function value: -0.626174
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.627179
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.661195
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.712192
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.728174
+         Iterations: 2
+         Function evaluations: 46
+Optimization terminated successfully.
+         Current function value: -0.728444
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.744858
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.762971
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.619333390144
+0.623857150405

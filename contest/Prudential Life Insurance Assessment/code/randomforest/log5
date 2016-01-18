@@ -1,0 +1,202 @@
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10, min_samples_leaf: 5
+[  1.74422449e-04   1.55874548e-02   2.39145371e-03   5.20119791e-02
+   3.93244047e-05   1.56474051e-03   2.39313314e-04   3.29154908e-02
+   1.49107578e-02   1.00611613e-01   1.36019644e-01   1.67031259e-02
+   8.16626186e-03   4.31121252e-03   4.76339460e-03   1.54451356e-03
+   1.33636369e-02   1.86482156e-03   3.11184699e-03   6.41460867e-03
+   1.30672531e-03   7.22163677e-03   1.07729369e-02   5.49024755e-03
+   2.70814696e-03   8.57327331e-03   2.27280644e-03   3.59799956e-03
+   1.41541821e-02   3.17184621e-03   3.61784251e-03   2.47505200e-03
+   2.67687881e-03   1.49942469e-02   1.37331869e-02   1.98624818e-02
+   1.56057149e-02   1.55795105e-02   1.17929028e-02   1.82109934e-03
+   4.57096433e-02   4.08038832e-03   7.33787237e-03   9.88542561e-04
+   1.22525554e-03   2.55395661e-03   2.10171080e-04   4.89311008e-04
+   1.20222663e-03   1.04936718e-02   3.26719102e-04   6.67259872e-02
+   4.34085722e-03   1.35416313e-03   3.36597200e-03   1.04306131e-03
+   3.23687491e-03   1.44666125e-03   5.30792744e-04   5.66702938e-02
+   2.94414008e-03   1.49181486e-03   1.42270690e-03   1.51956733e-03
+   5.83255310e-03   2.47955939e-03   6.60894323e-03   8.21019077e-04
+   1.10895793e-03   5.78090403e-03   1.78329503e-03   9.05309297e-06
+   1.51716666e-03   7.02644121e-04   4.37055927e-04   2.89463604e-02
+   1.15206355e-02   2.74937159e-03   1.03190956e-03   6.37931824e-05
+   5.38730614e-02   2.21719944e-04   5.74056491e-05   5.79193021e-04
+   9.85080938e-05   4.69270023e-05   2.23766092e-04   5.20437300e-04
+   6.18203878e-04   2.35422717e-04   3.73620857e-05   7.36046904e-05
+   3.50038362e-02   4.68711111e-04   9.18282745e-05   1.10137192e-04
+   1.05228542e-04   4.65048259e-05   1.59023349e-04   5.75308229e-04
+   6.33559448e-03   5.01394200e-04   1.84006004e-03   8.78535159e-05
+   2.23434067e-04   1.62344240e-04   2.57732655e-04   5.75691236e-04
+   2.84372526e-04   1.99729724e-04   3.27624379e-04   3.80028856e-04
+   1.49630039e-04   1.58104863e-04   1.92118038e-03   3.22092582e-03
+   9.18231200e-05   1.90705637e-03   3.55453884e-04   2.64607312e-03
+   4.61451257e-04   6.26873090e-05   4.79525409e-04   1.88684197e-04
+   6.21642608e-04   6.78028865e-03   6.39121668e-03]
+('Train score is:', 0.5918784330917315)
+Optimization terminated successfully.
+         Current function value: -0.591878
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.592288
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.623676
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.674816
+         Iterations: 2
+         Function evaluations: 94
+Optimization terminated successfully.
+         Current function value: -0.694650
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.695039
+         Iterations: 2
+         Function evaluations: 51
+Optimization terminated successfully.
+         Current function value: -0.714117
+         Iterations: 2
+         Function evaluations: 85
+Optimization terminated successfully.
+         Current function value: -0.733347
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.623961976592
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10, min_samples_leaf: 5
+[  1.91762611e-04   1.59786929e-02   2.58132445e-03   4.84993190e-02
+   4.32299699e-05   1.66389492e-03   2.24609301e-04   3.22692971e-02
+   1.55527664e-02   1.02699190e-01   1.34790766e-01   1.71770301e-02
+   9.28400242e-03   5.03809048e-03   5.03355028e-03   1.59721022e-03
+   1.33358844e-02   1.97743628e-03   2.75344737e-03   6.54428533e-03
+   1.15708595e-03   6.31584378e-03   1.22356419e-02   4.60931976e-03
+   2.20170284e-03   8.07345515e-03   2.19620947e-03   3.38060786e-03
+   1.37480271e-02   3.09933839e-03   3.39582155e-03   2.25092966e-03
+   2.59985083e-03   1.62948468e-02   1.37398863e-02   1.81725317e-02
+   1.42743771e-02   1.66530029e-02   1.24331707e-02   1.59908373e-03
+   5.05245107e-02   3.68776386e-03   6.80805597e-03   9.21381124e-04
+   1.24466722e-03   2.56069788e-03   1.97007150e-04   7.74081149e-04
+   1.47698027e-03   1.11756615e-02   3.76682227e-04   6.62508843e-02
+   5.08693155e-03   1.42182050e-03   4.09147742e-03   8.88324947e-04
+   3.22712331e-03   1.46115361e-03   5.76455243e-04   5.24202465e-02
+   3.12724953e-03   1.51404904e-03   1.50125383e-03   1.96405739e-03
+   4.91504038e-03   2.57905679e-03   5.60355029e-03   6.85189476e-04
+   1.02285174e-03   5.37617903e-03   1.75908345e-03   4.10383018e-05
+   1.66526911e-03   8.98330275e-04   6.72281872e-04   2.94136696e-02
+   1.06446864e-02   2.95170549e-03   9.57350480e-04   5.00570330e-05
+   5.41868791e-02   1.76989198e-04   4.35775829e-05   5.94751579e-04
+   1.57091036e-04   5.43475735e-05   4.70317955e-04   5.94352348e-04
+   7.36376335e-04   1.93401074e-04   6.12166291e-05   9.68163266e-05
+   3.59286566e-02   4.48328718e-04   1.75452004e-04   1.49156256e-04
+   1.12809968e-04   4.26073460e-05   1.89185808e-04   6.69905452e-04
+   5.37603440e-03   5.58459969e-04   2.26670483e-03   1.04203419e-04
+   1.92041440e-04   1.59117682e-04   2.49650000e-04   5.48458825e-04
+   2.22738482e-04   1.81610116e-04   3.28581433e-04   4.21551860e-04
+   1.51478731e-04   2.05546428e-04   2.10731629e-03   2.56893797e-03
+   1.24724902e-04   2.16824915e-03   3.69269481e-04   2.35323907e-03
+   4.48178498e-04   4.05501970e-05   4.51030757e-04   1.46266492e-04
+   6.99733175e-04   7.83313420e-03   6.46059408e-03]
+('Train score is:', 0.5882650903910149)
+Optimization terminated successfully.
+         Current function value: -0.588265
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.588939
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.618200
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.672765
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.691713
+         Iterations: 2
+         Function evaluations: 43
+Optimization terminated successfully.
+         Current function value: -0.692341
+         Iterations: 2
+         Function evaluations: 43
+Optimization terminated successfully.
+         Current function value: -0.711581
+         Iterations: 2
+         Function evaluations: 91
+Optimization terminated successfully.
+         Current function value: -0.731455
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.625108328996
+n_estimators: 1000, max_features: sqrt, max_depth: 15, verbose: 1, n_jobs: -1, min_samples_split: 10, min_samples_leaf: 5
+[  2.01284069e-04   1.52351981e-02   2.38369590e-03   5.09282612e-02
+   5.40077377e-05   1.52914391e-03   1.83143168e-04   3.23049559e-02
+   1.47720204e-02   1.01480287e-01   1.37412967e-01   1.81372573e-02
+   8.47429830e-03   4.87520412e-03   5.12855281e-03   1.53480761e-03
+   1.34796048e-02   2.05814143e-03   3.57890655e-03   6.40822873e-03
+   1.12341438e-03   5.06901930e-03   1.06804220e-02   5.11837811e-03
+   2.46349390e-03   5.85876849e-03   2.42543212e-03   3.71047596e-03
+   1.28597199e-02   3.38201376e-03   3.52296598e-03   2.57470305e-03
+   2.71988053e-03   1.63429786e-02   1.40343331e-02   1.83618436e-02
+   1.44635385e-02   1.58533420e-02   1.21850434e-02   1.92623086e-03
+   5.10878710e-02   3.43755124e-03   8.36558853e-03   1.26789954e-03
+   1.26915418e-03   2.51808394e-03   2.29860842e-04   4.41069533e-04
+   1.17293986e-03   1.14175762e-02   3.20123420e-04   6.67863106e-02
+   5.24940269e-03   2.20212725e-03   3.53925291e-03   8.49803139e-04
+   2.54245687e-03   1.49899216e-03   4.85382726e-04   5.51271291e-02
+   3.10718871e-03   1.44949714e-03   1.42984895e-03   1.21084629e-03
+   6.57400917e-03   2.67763791e-03   6.91322761e-03   5.13146172e-04
+   9.97552762e-04   6.50701979e-03   1.68856135e-03   4.55593213e-05
+   1.51789963e-03   7.72387389e-04   4.02194560e-04   2.67196263e-02
+   9.40309155e-03   2.91338080e-03   1.19443460e-03   4.03946964e-05
+   5.15564625e-02   1.70573704e-04   6.18007138e-05   5.02174582e-04
+   9.64028362e-05   6.01480526e-05   2.01145280e-04   6.09204390e-04
+   7.10855414e-04   2.01629796e-04   7.63859376e-05   8.72434417e-05
+   3.41301241e-02   4.47958490e-04   1.74442627e-04   1.69352640e-04
+   1.40198645e-04   6.26817682e-05   1.68699535e-04   5.52643262e-04
+   7.86266944e-03   4.27109607e-04   1.89831148e-03   1.04828563e-04
+   1.52187351e-04   1.80983660e-04   1.96484233e-04   4.44545340e-04
+   3.11485379e-04   1.50374306e-04   3.79693232e-04   4.31495706e-04
+   1.91674918e-04   1.59679274e-04   1.94334509e-03   3.23697770e-03
+   1.04984743e-04   1.98230897e-03   4.01126557e-04   2.65740912e-03
+   3.26222159e-04   4.07285296e-05   4.10261353e-04   1.73144474e-04
+   6.53798192e-04   8.04929590e-03   6.22670378e-03]
+('Train score is:', 0.596281239414256)
+Optimization terminated successfully.
+         Current function value: -0.596281
+         Iterations: 1
+         Function evaluations: 13
+Optimization terminated successfully.
+         Current function value: -0.596759
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.627009
+         Iterations: 2
+         Function evaluations: 39
+Optimization terminated successfully.
+         Current function value: -0.679158
+         Iterations: 2
+         Function evaluations: 38
+Optimization terminated successfully.
+         Current function value: -0.698194
+         Iterations: 2
+         Function evaluations: 72
+Optimization terminated successfully.
+         Current function value: -0.698449
+         Iterations: 2
+         Function evaluations: 53
+Optimization terminated successfully.
+         Current function value: -0.715164
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.735197
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.614334043722
+0.621134783103

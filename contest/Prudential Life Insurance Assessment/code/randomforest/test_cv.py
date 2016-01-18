@@ -28,11 +28,13 @@ train['X'] = X
 
 def print_cv(param, num_rounds, nfold=5):
     global train
+    print train.columns.values
+    print len(train.columns.values)
     cv = CrossValidation(train, param, num_rounds, nfold)
-    print param
+#    print param
     print cv.cv()
 
-param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 12, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.015, 'objective': 'count:poisson', 'max_depth': 9}
+param = {'n_estimators': 500, 'max_features': 'sqrt', 'max_depth': None, 'verbose': 1, 'n_jobs': -1}
 print_cv(param, 1500, 3)
 
 '''

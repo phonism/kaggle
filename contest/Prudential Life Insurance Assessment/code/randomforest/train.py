@@ -32,8 +32,29 @@ class TrainModel(object):
         test = self.test
         features = list(train.drop(['Id', 'Response'], axis=1))
         target = 'Response'
-        clf = RandomForestRegressor(n_estimators = 500, max_features = 'sqrt', max_depth = None, verbose = 1, n_jobs = -1)
+        ne = 1000
+        mf = 'sqrt'
+        md = 15
+        vb = 1
+        nj = -1
+        mss = 10
+        msl = 5
+        clf = RandomForestRegressor(n_estimators = ne, 
+                                    max_features = mf, 
+                                    max_depth = md, 
+                                    verbose = vb, 
+                                    n_jobs = nj, 
+                                    min_samples_leaf = msl,
+                                    min_samples_split = mss)
+        print 'n_estimators: ' + str(ne) \
+            + ', max_features: ' + str(mf) \
+            + ', max_depth: ' + str(md) \
+            + ', verbose: ' + str(vb) \
+            + ', n_jobs: ' + str(nj) \
+            + ', min_samples_split: ' + str(mss) \
+            + ', min_samples_leaf: ' + str(msl)
         clf.fit(train[features], train[target])
+        print clf.feature_importances_
         train_preds = clf.predict(train[features])
         test_preds = clf.predict(test[features])
         print('Train score is:', self._eval_wrapper(train_preds, train['Response'])) 
