@@ -1,0 +1,3 @@
+param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 12, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.02, 'objective': 'count:poisson', 'max_depth': 9}
+rounds = 1500
+0.660324362511

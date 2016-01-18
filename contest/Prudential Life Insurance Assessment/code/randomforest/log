@@ -1,0 +1,692 @@
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/externals/joblib/_multiprocessing_helpers.py:29: UserWarning: This platform lacks a functioning sem_open implementation, therefore, the required synchronization primitives needed will not function, see issue 3770..  joblib will operate in serial mode
+  warnings.warn('%s.  joblib will operate in serial mode' % (e,))
+/home/users/luqi03/.local/lib/python2.7/site-packages/sklearn/cross_validation.py:42: DeprecationWarning: This module has been deprecated in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+{'subsample': 0.9, 'eta': 0.2, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 12, 'min_child_weight': 80, 'max_depth': 9}
+('Train score is:', 0.9731391632894837)
+Optimization terminated successfully.
+         Current function value: -0.973139
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.973861
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.976881
+         Iterations: 1
+         Function evaluations: 18
+Optimization terminated successfully.
+         Current function value: -0.978603
+         Iterations: 2
+         Function evaluations: 33
+Optimization terminated successfully.
+         Current function value: -0.978637
+         Iterations: 2
+         Function evaluations: 45
+Optimization terminated successfully.
+         Current function value: -0.978957
+         Iterations: 2
+         Function evaluations: 43
+Optimization terminated successfully.
+         Current function value: -0.979212
+         Iterations: 2
+         Function evaluations: 71
+Optimization terminated successfully.
+         Current function value: -0.980230
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.627097036493
+('Train score is:', 0.9735061964111367)
+Optimization terminated successfully.
+         Current function value: -0.973506
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.974278
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.977169
+         Iterations: 1
+         Function evaluations: 19
+Optimization terminated successfully.
+         Current function value: -0.978957
+         Iterations: 2
+         Function evaluations: 36
+Optimization terminated successfully.
+         Current function value: -0.978983
+         Iterations: 2
+         Function evaluations: 48
+Optimization terminated successfully.
+         Current function value: -0.979296
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.979547
+         Iterations: 2
+         Function evaluations: 46
+Optimization terminated successfully.
+         Current function value: -0.980693
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.612759457721
+('Train score is:', 0.9717213511560913)
+Optimization terminated successfully.
+         Current function value: -0.971721
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.972595
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.975774
+         Iterations: 1
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.977498
+         Iterations: 2
+         Function evaluations: 64
+Optimization terminated successfully.
+         Current function value: -0.977504
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.977932
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.978231
+         Iterations: 2
+         Function evaluations: 73
+Optimization terminated successfully.
+         Current function value: -0.979407
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.617376728707
+('Train score is:', 0.9726782733770446)
+Optimization terminated successfully.
+         Current function value: -0.972678
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.973513
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.976588
+         Iterations: 1
+         Function evaluations: 53
+Optimization terminated successfully.
+         Current function value: -0.978326
+         Iterations: 2
+         Function evaluations: 32
+Optimization terminated successfully.
+         Current function value: -0.978371
+         Iterations: 2
+         Function evaluations: 89
+Optimization terminated successfully.
+         Current function value: -0.978771
+         Iterations: 2
+         Function evaluations: 45
+Optimization terminated successfully.
+         Current function value: -0.979125
+         Iterations: 2
+         Function evaluations: 53
+Optimization terminated successfully.
+         Current function value: -0.980307
+         Iterations: 2
+         Function evaluations: 38
+The 4th CV scores is: 0.631773238728
+('Train score is:', 0.9733191756412279)
+Optimization terminated successfully.
+         Current function value: -0.973319
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.974043
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.977011
+         Iterations: 1
+         Function evaluations: 48
+Optimization terminated successfully.
+         Current function value: -0.978688
+         Iterations: 2
+         Function evaluations: 33
+Optimization terminated successfully.
+         Current function value: -0.978714
+         Iterations: 2
+         Function evaluations: 48
+Optimization terminated successfully.
+         Current function value: -0.979144
+         Iterations: 2
+         Function evaluations: 89
+Optimization terminated successfully.
+         Current function value: -0.979450
+         Iterations: 2
+         Function evaluations: 87
+Optimization terminated successfully.
+         Current function value: -0.980360
+         Iterations: 2
+         Function evaluations: 38
+The 5th CV scores is: 0.619013607767
+0.621604013883
+{'subsample': 0.9, 'eta': 0.1, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 12, 'min_child_weight': 80, 'max_depth': 9}
+('Train score is:', 0.9192329381131401)
+Optimization terminated successfully.
+         Current function value: -0.919233
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.922590
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.929988
+         Iterations: 2
+         Function evaluations: 85
+Optimization terminated successfully.
+         Current function value: -0.936652
+         Iterations: 2
+         Function evaluations: 33
+Optimization terminated successfully.
+         Current function value: -0.936928
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.937472
+         Iterations: 2
+         Function evaluations: 56
+Optimization terminated successfully.
+         Current function value: -0.938320
+         Iterations: 2
+         Function evaluations: 89
+Optimization terminated successfully.
+         Current function value: -0.944678
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.635773824064
+('Train score is:', 0.9166272772994845)
+Optimization terminated successfully.
+         Current function value: -0.916627
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.920101
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.927801
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.934881
+         Iterations: 2
+         Function evaluations: 55
+Optimization terminated successfully.
+         Current function value: -0.934928
+         Iterations: 2
+         Function evaluations: 32
+Optimization terminated successfully.
+         Current function value: -0.935679
+         Iterations: 2
+         Function evaluations: 45
+Optimization terminated successfully.
+         Current function value: -0.936761
+         Iterations: 2
+         Function evaluations: 58
+Optimization terminated successfully.
+         Current function value: -0.943556
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.645901118934
+('Train score is:', 0.9190946218332188)
+Optimization terminated successfully.
+         Current function value: -0.919095
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.922492
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.930446
+         Iterations: 2
+         Function evaluations: 50
+Optimization terminated successfully.
+         Current function value: -0.937204
+         Iterations: 2
+         Function evaluations: 79
+Optimization terminated successfully.
+         Current function value: -0.937373
+         Iterations: 2
+         Function evaluations: 34
+Optimization terminated successfully.
+         Current function value: -0.938045
+         Iterations: 2
+         Function evaluations: 34
+Optimization terminated successfully.
+         Current function value: -0.939010
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.945300
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.64460484526
+('Train score is:', 0.9168280513280512)
+Optimization terminated successfully.
+         Current function value: -0.916828
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.920306
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.928076
+         Iterations: 2
+         Function evaluations: 50
+Optimization terminated successfully.
+         Current function value: -0.935094
+         Iterations: 2
+         Function evaluations: 83
+Optimization terminated successfully.
+         Current function value: -0.935279
+         Iterations: 2
+         Function evaluations: 36
+Optimization terminated successfully.
+         Current function value: -0.935874
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.937222
+         Iterations: 2
+         Function evaluations: 70
+Optimization terminated successfully.
+         Current function value: -0.943680
+         Iterations: 2
+         Function evaluations: 38
+The 4th CV scores is: 0.646996114382
+('Train score is:', 0.9184004519408457)
+Optimization terminated successfully.
+         Current function value: -0.918400
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.921922
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.929601
+         Iterations: 2
+         Function evaluations: 43
+Optimization terminated successfully.
+         Current function value: -0.936330
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.936474
+         Iterations: 2
+         Function evaluations: 35
+Optimization terminated successfully.
+         Current function value: -0.937317
+         Iterations: 2
+         Function evaluations: 29
+Optimization terminated successfully.
+         Current function value: -0.938469
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.945095
+         Iterations: 2
+         Function evaluations: 38
+The 5th CV scores is: 0.638219578859
+0.6422990963
+{'subsample': 0.9, 'eta': 0.05, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 12, 'min_child_weight': 80, 'max_depth': 9}
+('Train score is:', 0.8442510541086257)
+Optimization terminated successfully.
+         Current function value: -0.844251
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.848933
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.862662
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.872708
+         Iterations: 2
+         Function evaluations: 74
+Optimization terminated successfully.
+         Current function value: -0.873701
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.874083
+         Iterations: 2
+         Function evaluations: 45
+Optimization terminated successfully.
+         Current function value: -0.875863
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.885963
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.65361804806
+('Train score is:', 0.8441471369758947)
+Optimization terminated successfully.
+         Current function value: -0.844147
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.848698
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.862690
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.872810
+         Iterations: 2
+         Function evaluations: 56
+Optimization terminated successfully.
+         Current function value: -0.873558
+         Iterations: 2
+         Function evaluations: 57
+Optimization terminated successfully.
+         Current function value: -0.873916
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.875864
+         Iterations: 2
+         Function evaluations: 62
+Optimization terminated successfully.
+         Current function value: -0.885731
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.662073353829
+('Train score is:', 0.8468859300728767)
+Optimization terminated successfully.
+         Current function value: -0.846886
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.851481
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.865004
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.875182
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.875766
+         Iterations: 2
+         Function evaluations: 53
+Optimization terminated successfully.
+         Current function value: -0.876000
+         Iterations: 2
+         Function evaluations: 50
+Optimization terminated successfully.
+         Current function value: -0.877568
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.887698
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.655948983521
+('Train score is:', 0.845662851371611)
+Optimization terminated successfully.
+         Current function value: -0.845663
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.850354
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.864078
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.874264
+         Iterations: 2
+         Function evaluations: 84
+Optimization terminated successfully.
+         Current function value: -0.874987
+         Iterations: 2
+         Function evaluations: 58
+Optimization terminated successfully.
+         Current function value: -0.875610
+         Iterations: 2
+         Function evaluations: 53
+Optimization terminated successfully.
+         Current function value: -0.877471
+         Iterations: 2
+         Function evaluations: 83
+Optimization terminated successfully.
+         Current function value: -0.887885
+         Iterations: 2
+         Function evaluations: 38
+The 4th CV scores is: 0.657315704448
+('Train score is:', 0.8464726636107365)
+Optimization terminated successfully.
+         Current function value: -0.846473
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.851063
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.864698
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.874696
+         Iterations: 2
+         Function evaluations: 92
+Optimization terminated successfully.
+         Current function value: -0.875495
+         Iterations: 2
+         Function evaluations: 51
+Optimization terminated successfully.
+         Current function value: -0.876059
+         Iterations: 2
+         Function evaluations: 88
+Optimization terminated successfully.
+         Current function value: -0.877676
+         Iterations: 2
+         Function evaluations: 51
+Optimization terminated successfully.
+         Current function value: -0.887878
+         Iterations: 2
+         Function evaluations: 38
+The 5th CV scores is: 0.643721072583
+0.654535432488
+{'subsample': 0.9, 'eta': 0.005, 'colsample_bytree': 0.4, 'silent': 1, 'objective': 'count:poisson', 'nthread': 12, 'min_child_weight': 80, 'max_depth': 9}
+('Train score is:', 0.6446042674825285)
+Optimization terminated successfully.
+         Current function value: -0.644604
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.650006
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.676270
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.691211
+         Iterations: 2
+         Function evaluations: 91
+Optimization terminated successfully.
+         Current function value: -0.693233
+         Iterations: 2
+         Function evaluations: 71
+Optimization terminated successfully.
+         Current function value: -0.693674
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.708056
+         Iterations: 2
+         Function evaluations: 80
+Optimization terminated successfully.
+         Current function value: -0.726329
+         Iterations: 2
+         Function evaluations: 38
+The 1th CV scores is: 0.654548965968
+('Train score is:', 0.6451086596824404)
+Optimization terminated successfully.
+         Current function value: -0.645109
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.650663
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.677431
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.692522
+         Iterations: 2
+         Function evaluations: 93
+Optimization terminated successfully.
+         Current function value: -0.694598
+         Iterations: 2
+         Function evaluations: 37
+Optimization terminated successfully.
+         Current function value: -0.695109
+         Iterations: 2
+         Function evaluations: 54
+Optimization terminated successfully.
+         Current function value: -0.709266
+         Iterations: 2
+         Function evaluations: 59
+Optimization terminated successfully.
+         Current function value: -0.726917
+         Iterations: 2
+         Function evaluations: 38
+The 2th CV scores is: 0.648191909158
+('Train score is:', 0.6450700039498096)
+Optimization terminated successfully.
+         Current function value: -0.645070
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.650507
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.676911
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.691788
+         Iterations: 2
+         Function evaluations: 86
+Optimization terminated successfully.
+         Current function value: -0.693178
+         Iterations: 2
+         Function evaluations: 41
+Optimization terminated successfully.
+         Current function value: -0.693807
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.707911
+         Iterations: 2
+         Function evaluations: 89
+Optimization terminated successfully.
+         Current function value: -0.725836
+         Iterations: 2
+         Function evaluations: 38
+The 3th CV scores is: 0.648121019912
+('Train score is:', 0.6423914957766159)
+Optimization terminated successfully.
+         Current function value: -0.642391
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.648390
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.674675
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.689116
+         Iterations: 2
+         Function evaluations: 94
+Optimization terminated successfully.
+         Current function value: -0.690156
+         Iterations: 4
+         Function evaluations: 69
+Optimization terminated successfully.
+         Current function value: -0.690287
+         Iterations: 2
+         Function evaluations: 52
+Optimization terminated successfully.
+         Current function value: -0.704273
+         Iterations: 2
+         Function evaluations: 86
+Optimization terminated successfully.
+         Current function value: -0.722079
+         Iterations: 2
+         Function evaluations: 38
+The 4th CV scores is: 0.659117630275
+('Train score is:', 0.6385409411357119)
+Optimization terminated successfully.
+         Current function value: -0.638541
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.643957
+         Iterations: 1
+         Function evaluations: 14
+Optimization terminated successfully.
+         Current function value: -0.670787
+         Iterations: 2
+         Function evaluations: 40
+Optimization terminated successfully.
+         Current function value: -0.686055
+         Iterations: 2
+         Function evaluations: 51
+Optimization terminated successfully.
+         Current function value: -0.687972
+         Iterations: 2
+         Function evaluations: 90
+Optimization terminated successfully.
+         Current function value: -0.688659
+         Iterations: 2
+         Function evaluations: 49
+Optimization terminated successfully.
+         Current function value: -0.702453
+         Iterations: 2
+         Function evaluations: 50
+Optimization terminated successfully.
+         Current function value: -0.721665
+         Iterations: 2
+         Function evaluations: 38
+The 5th CV scores is: 0.664474777426
+0.654890860548

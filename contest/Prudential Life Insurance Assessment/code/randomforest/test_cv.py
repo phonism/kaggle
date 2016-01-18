@@ -1,5 +1,4 @@
 import numpy as np
-import random
 import pandas as pd
 from cross_validation import *
 
@@ -33,8 +32,7 @@ def print_cv(param, num_rounds, nfold=5):
     print param
     print cv.cv()
 
-# random.seed(23)
-param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 15, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.015, 'objective': 'count:poisson', 'max_depth': 9}
+param = {'colsample_bytree': 0.4, 'silent': 1, 'nthread': 12, 'min_child_weight': 80, 'subsample': 0.9, 'eta': 0.015, 'objective': 'count:poisson', 'max_depth': 9}
 print_cv(param, 1500, 3)
 
 '''
